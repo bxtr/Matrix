@@ -51,6 +51,13 @@ public class SimpleTests {
     }
 
     @Test
+    public void AlgerbraicAdditionOneToZero() {
+        One one = (One)GridCellFactory.create(GridCell.One);
+        Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
+        Assert.assertEquals("1", AlgebraicOperation.addition(one, zero).toString());
+    }
+
+    @Test
     public void RowCreateTest() {
         GridRow zeroGridRow = GridRow.newZeroGridRow();
         Assert.assertEquals(Answer.YES, zeroGridRow.values().isZeroRow());
