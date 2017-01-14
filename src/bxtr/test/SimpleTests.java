@@ -48,4 +48,13 @@ public class SimpleTests {
         GridRow zeroGridRow = GridRow.newZeroGridRow();
         Assert.assertEquals(Answer.YES, zeroGridRow.values().isZeroRow());
     }
+
+
+    @Test
+    public void ZeroRowMultipleTest() {
+        GridRow oneGridRow = GridRow.newZeroGridRow(4);
+        GridRow secondGridRow = GridRow.newZeroGridRow(4);
+        Assert.assertEquals("#[0][0][0][0]#", AlgebraicOperation.multiple(oneGridRow, secondGridRow).toString();
+    }
 }
+
