@@ -12,6 +12,10 @@ public class GridRow {
         return new GridRow();
     }
 
+    public static GridRow newOneGridRow(int size) {
+        return new GridRow();
+    }
+
     public Values values() {
         return new Values();
     }

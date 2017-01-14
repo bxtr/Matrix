@@ -25,4 +25,8 @@ public class AlgebraicOperation {
         }
         return GridCellFactory.create(GridCell.One);
     }
+
+    public static Value addition(GridRow first, GridRow second) {
+        return new RowValue();
+    }
 }
