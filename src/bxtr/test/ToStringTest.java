@@ -1,4 +1,7 @@
 package bxtr.test;
+import bxtr.GridCell;
+import bxtr.GridCellFactory;
+import bxtr.One;
 import org.junit.Test;
 import org.junit.Assert;
 
