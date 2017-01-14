@@ -23,7 +23,14 @@ public class ToStringTest {
     }
 
     @Test
-    public void AlgebraicMultiple() {
+    public void AlgebraicMultipleOneToZero() {
+        One one = (One) GridCellFactory.create(GridCell.One);
+        Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
+        Assert.assertEquals("0", AlgebraicOperation.multiple(one, zero).toString());
+    }
+
+    @Test
+    public void AlgebraicMultipleZeroToZero() {
         One one = (One) GridCellFactory.create(GridCell.One);
         Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
         Assert.assertEquals("0", AlgebraicOperation.multiple(one, zero).toString());
