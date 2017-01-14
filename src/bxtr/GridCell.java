@@ -5,11 +5,11 @@ package bxtr;
  */
 public enum GridCell {
 
-    One(One.class);
+    One(One.class), Zero(Zero.class);
 
     private Class cellClass;
 
-    public Class get() {
+    public Class<Value> get() {
         return cellClass;
     }
 

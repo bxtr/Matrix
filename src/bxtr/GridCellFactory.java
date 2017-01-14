@@ -5,7 +5,13 @@ package bxtr;
  */
 public class GridCellFactory {
 
-    public static One create(GridCell gridCell) {
-        return new One();
+    public static Value create(GridCell cell) {
+        switch (cell) {
+            case One:
+                return new One();
+            case Zero:
+                return new Zero();
+        }
+        return null;
     }
 }
