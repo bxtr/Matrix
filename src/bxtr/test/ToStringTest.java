@@ -7,7 +7,7 @@ import org.junit.Assert;
 /**
  * Created by basic on 14.01.2017.
  */
-public class ToStringTest {
+public class SimpleTests {
     @Test
     public void OneToString() {
         One one = (One) GridCellFactory.create(GridCell.One);
@@ -33,6 +33,19 @@ public class ToStringTest {
     public void AlgebraicMultipleZeroToZero() {
         One one = (One) GridCellFactory.create(GridCell.One);
         Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
-        Assert.assertEquals("0", AlgebraicOperation.multiple(one, zero).toString());
+        Assert.assertEquals("0", AlgebraicOperation.multiple(zero, zero).toString());
+    }
+
+    @Test
+    public void AlgebraicMultipleOneToOne() {
+        One one = (One) GridCellFactory.create(GridCell.One);
+        Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
+        Assert.assertEquals("1", AlgebraicOperation.multiple(one, one).toString());
+    }
+
+    @Test
+    public void RowCreateTest() {
+        GridRow zeroGridRow = GridRow.newZeroGridRow();
+        Assert.assertEquals(Answer.YES, zeroGridRow.values().isZeroRow());
     }
 }

@@ -5,6 +5,10 @@ package bxtr;
  */
 public class AlgebraicOperation {
     public static Value multiple(Value first, Value second) {
-        return GridCellFactory.create(GridCell.Zero);
+        if(first instanceof Zero || second instanceof Zero) {
+            return GridCellFactory.create(GridCell.Zero);
+        }
+        return GridCellFactory.create(GridCell.One);
+
     }
 }
