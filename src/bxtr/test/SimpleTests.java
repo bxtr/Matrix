@@ -46,7 +46,7 @@ public class SimpleTests {
     }
 
     @Test
-    public void AlgebraricSubstractionOneToZero() {
+    public void AlgebraicSubtractionOneToZero() {
         One one = (One)GridCellFactory.create(GridCell.One);
         Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
         Assert.assertEquals("1", AlgebraicOperation.substraction(one, zero).toString());
