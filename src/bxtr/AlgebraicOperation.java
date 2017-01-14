@@ -11,8 +11,8 @@ public class AlgebraicOperation {
         return GridCellFactory.create(GridCell.One);
     }
 
-    public static Value multiple(GridRow first, GridRow second) {
-        return new RowValue();
+    public static GridRow multiple(GridRow first, GridRow second) {
+        return new RowValue(4);
     }
 
     public static Value substraction(Value first, Value second) {
@@ -26,7 +26,7 @@ public class AlgebraicOperation {
         return GridCellFactory.create(GridCell.One);
     }
 
-    public static Value addition(GridRow first, GridRow second) {
-        return new RowValue();
+    public static GridRow addition(GridRow first, GridRow second) {
+        return new RowValue(4, GridCell.One);
     }
 }
