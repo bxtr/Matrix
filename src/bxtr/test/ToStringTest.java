@@ -1,8 +1,5 @@
 package bxtr.test;
-import bxtr.GridCell;
-import bxtr.GridCellFactory;
-import bxtr.One;
-import bxtr.Zero;
+import bxtr.*;
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -22,6 +19,13 @@ public class ToStringTest {
     public void ZeroToString() {
         Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
         Assert.assertNotNull(zero);
-        Assert.assertEquals("2", zero.toString());
+        Assert.assertEquals("0", zero.toString());
+    }
+
+    @Test
+    public void AlgebraicMultiple() {
+        One one = (One) GridCellFactory.create(GridCell.One);
+        Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
+        Assert.assertEquals("0", AlgebraicOperation.multiple(one, zero).toString());
     }
 }

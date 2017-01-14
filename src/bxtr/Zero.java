@@ -6,6 +6,6 @@ package bxtr;
 public class Zero implements Value{
     @Override
     public String toString() {
-        return "Zero";
+        return "0";
     }
 }
