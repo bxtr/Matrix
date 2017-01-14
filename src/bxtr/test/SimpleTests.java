@@ -33,7 +33,6 @@ public class SimpleTests {
 
     @Test
     public void AlgebraicMultipleZeroToZero() {
-        One one = (One) GridCellFactory.create(GridCell.One);
         Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
         Assert.assertEquals("0", AlgebraicOperation.multiple(zero, zero).toString());
     }
@@ -41,7 +40,6 @@ public class SimpleTests {
     @Test
     public void AlgebraicMultipleOneToOne() {
         One one = (One) GridCellFactory.create(GridCell.One);
-        Zero zero = (Zero) GridCellFactory.create(GridCell.Zero);
         Assert.assertEquals("1", AlgebraicOperation.multiple(one, one).toString());
     }
 
@@ -58,6 +56,10 @@ public class SimpleTests {
         Assert.assertEquals(Answer.YES, zeroGridRow.values().isZeroRow());
     }
 
+    @Test
+    public void FourCellRowWhenNewZeroGridWithFour() {
+
+    }
 
     @Test
     public void ZeroRowMultipleTest() {
@@ -65,5 +67,7 @@ public class SimpleTests {
         GridRow secondGridRow = GridRow.newZeroGridRow(4);
         Assert.assertEquals("#[0][0][0][0]#", AlgebraicOperation.multiple(oneGridRow, secondGridRow).toString());
     }
+
+
 }
 
