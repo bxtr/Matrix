@@ -9,6 +9,13 @@ public class AlgebraicOperation {
             return GridCellFactory.create(GridCell.Zero);
         }
         return GridCellFactory.create(GridCell.One);
+    }
 
+    public static Value multiple(GridRow first, GridRow second) {
+        return new RowValue();
+    }
+
+    public static Value substraction(Value first, Value second) {
+        return GridCellFactory.create(GridCell.One);
     }
 }
