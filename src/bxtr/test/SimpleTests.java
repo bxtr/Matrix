@@ -75,6 +75,13 @@ public class SimpleTests {
         Assert.assertEquals("#[0][0][0][0]#", AlgebraicOperation.multiple(oneGridRow, secondGridRow).toString());
     }
 
+    @Test
+    public void ZeroAndOneRowAdditioalTest() {
+        GridRow oneGridRow = GridRow.newZeroGridRow(4);
+        GridRow secondGridRow = GridRow.newOneGridRow(4);
+        Assert.assertEquals("#[1][1][1][1]#", AlgebraicOperation.multiple(oneGridRow, secondGridRow).toString());
+    }
+
 
 }
 
