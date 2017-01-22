@@ -82,6 +82,12 @@ public class SimpleTests {
         Assert.assertEquals("#[1][1][1][1]#", AlgebraicOperation.addition(oneGridRow, secondGridRow).toString());
     }
 
+    @Test
+    public void AddTwodimensionalZeroArrayTest(){
+        GridRow twoDimensionalRow = GridRow.newTwoDimensionalRow(2, 2);
+        Assert.assertArrayEquals("{0 ,0}, {0, 0}", GridRow.newTwoDimensionalRow(2, 2));
+    }
+
 
 }
 
