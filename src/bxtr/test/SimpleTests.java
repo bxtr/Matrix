@@ -83,9 +83,9 @@ public class SimpleTests {
     }
 
     @Test
-    public void AddTwodimensionalZeroArrayTest(){
-        GridRow twoDimensionalRow = GridRow.newTwoDimensionalRow(2, 2);
-        Assert.assertArrayEquals("{0 ,0}, {0, 0}", GridRow.newTwoDimensionalRow(2, 2));
+    public void AddTwoDimensionalZeroMatrixTest(){
+        Matrix newZeroMatrix = Matrix.newZeroMatrix(2, 2);
+        Assert.assertArrayEquals("[0,0],[0,0]", newZeroMatrix.toString());
     }
 
 
