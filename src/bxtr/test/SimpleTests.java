@@ -85,7 +85,7 @@ public class SimpleTests {
     @Test
     public void AddTwoDimensionalZeroMatrixTest(){
         Matrix newZeroMatrix = Matrix.newZeroMatrix(2, 2);
-        Assert.assertArrayEquals("[0,0],[0,0]", newZeroMatrix.toString());
+        Assert.assertEquals("#[0][0]#\n#[0][0]#\n", newZeroMatrix.toString());
     }
 
 

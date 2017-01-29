@@ -10,11 +10,11 @@ public class GridRow {
     }
 
     public static GridRow newZeroGridRow(int size) {
-        return new RowValue(4, GridCell.Zero);
+        return new RowValue(size, GridCell.Zero);
     }
 
     public static GridRow newOneGridRow(int size) {
-        return new RowValue(4, GridCell.One);
+        return new RowValue(size, GridCell.One);
     }
 
     public Values values() {
