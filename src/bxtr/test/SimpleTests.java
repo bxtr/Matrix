@@ -88,6 +88,13 @@ public class SimpleTests {
         Assert.assertEquals("#[0][0]#\n#[0][0]#\n", newZeroMatrix.toString());
     }
 
+    @Test
+    public void AddTwoDimensionalMatrixTest() {
+        Matrix newOneMatrix = Matrix.newOneMatrix(2, 2);
+        int [] [] tempMass = {{1,1}, {1,1}};
+        Assert.assertArrayEquals( tempMass, new Matrix[]{newOneMatrix});
+    }
+
 
 }
 
